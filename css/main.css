@@ -1,0 +1,158 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+header, footer {
+	margin: 0px;
+}
+
+.main {
+	height: calc(100vh - 55px);
+	overflow: auto;
+	margin-top: 65px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.navbar {
+	padding: .5rem .5rem .5rem 1rem;
+}
+
+.card-text {
+	font-size: 1.4em;
+}
+
+.navbar {
+	font-size: 1.4em;
+}
+
+#navbar-storyline .nav-link {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	color: red;
+	line-height: 1em;
+}
+
+#navbar-storyline ul:before {
+	border-left: red 2px solid;
+	position: absolute;
+	display: block;
+	content: " ";
+	height: 100%;
+	left: 5px;
+}
+
+ #bootstrapOverride a.nav-link.active {
+ 	background-color: red;
+ 	color: white;
+ }
+
+ #bootstrapOverride a.nav-link.active:before {
+ 	background-color: red;
+ }
+
+ #navbar-storyline .nav-link:before {
+ 	position: absolute;
+ 	border: red 2px solid;
+ 	border-radius: 12px;
+ 	left: 0px;
+ 	width: 12px;
+ 	height: 12px;
+ 	content: ' ';
+ 	background-color: white;
+ }
+
+.affiliate {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.art {
+	text-align: right;
+	padding: 0px;
+}
+
+.art img {
+	width: 70%;
+}
+
+div.storyline {
+	margin-left: 10px;
+}
+
+.storyline {
+	padding-left: 0px;
+	padding-right: 0px;
+	min-width: 150px;
+}
+
+.storyline img {
+	width: 60%;
+}
+
+.storyline img:first-of-type {
+	margin-top: 0px;
+}
+
+.storyline p {
+	margin: 0;
+}
+
+.card {
+	margin: 5px;
+	/*border-color: red;*/
+}
+
+.card-header {
+	margin-bottom: 10px;
+}
+
+.card-body {
+	padding: 10px;
+	padding-right: 5px;
+}
+
+.card-text {
+	margin-bottom: 0px;
+}
+
+.btn {
+	margin: 5px;
+	font-size: 1.6em;
+	padding: 10px;
+	background-color: white;
+	border-color: red;
+	color: red;
+}
+
+.checked {
+	color: orange;
+}
+
+.page-footer {
+	color: white;
+}
+
+p.outfit {
+	font-size: 1.4rem;
+}
+
+.clearfix:after, .clearfix:before {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+ }
+
+@media only screen and (min-width: 1024px){
+	.btn, .navbar, .card-text, p.jumbotron {
+		font-size: 1rem;
+	}
+
+	.main {
+		margin-top: 55px;
+	}
+}
